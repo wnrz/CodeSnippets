@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>makeBridgeSetGet</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>var &lt;#_bridge#&gt; : &lt;#class#&gt;!
+public var  &lt;#bridge#&gt; : &lt;#class#&gt;?{
+get {
+    guard let tmp = &lt;#_bridge#&gt; else {
+    &lt;#_bridge#&gt; = &lt;#class#&gt;()
+    return &lt;#_bridge#&gt;
+}
+return tmp
+}
+set {
+    &lt;#_bridge#&gt; = newValue
+}
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3F70F591-2BEB-4A25-8A81-1EBB4ACF1919</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>swift快速生成bridge实例对象</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>makePWTabButtonViewGetSet</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>public var &lt;#_tabButtonView#&gt; : PWTabButtonView?
+public var &lt;#tabButtonView#&gt; : PWTabButtonView!{
+get {
+    guard let tmp = &lt;#_tabButtonView#&gt; else {
+    let buttonWidth : CGFloat = &lt;#buttonWidth#&gt;
+    let height : CGFloat = &lt;#height#&gt;
+    let titles : Array = &lt;#array#&gt;
+        &lt;#_tabButtonView#&gt; = PWTabButtonView(frame: CGRect(x: 0, y: 10, width: buttonWidth * CGFloat(titles.count) + 20, height: height))
+        &lt;#_tabButtonView#&gt;!.tType = .&lt;#type#&gt;
+        &lt;#_tabButtonView#&gt;!.isTagCorner = &lt;#true#&gt;
+        &lt;#_tabButtonView#&gt;!.setLabel(UIFont.boldSystemFont(ofSize: &lt;#size#&gt;))
+        &lt;#_tabButtonView#&gt;!.setTextColor(UIColorFromRGBWithHex(&lt;#color#&gt;), select: UIColorFromRGBWithHex(&lt;#color#&gt;))
+        &lt;#_tabButtonView#&gt;!.clickEvent = {[weak self]  (tabButtonView : Any! , index : Int32 , move : UnsafeMutablePointer&lt;ObjCBool&gt;?) -&gt; Void in
+            move![0] = true
+            
+        }
+        &lt;#_tabButtonView#&gt;!.buttonWidth = buttonWidth
+        &lt;#_tabButtonView#&gt;!.viewWidth = Double(buttonWidth * CGFloat(titles.count) + 20)
+        &lt;#_tabButtonView#&gt;!.headerNames = titles
+        &lt;#_tabButtonView#&gt;!.setHiddenLine(true)
+        &lt;#_tabButtonView#&gt;!.moveTag(to: &lt;#_tabButtonView#&gt;?.buttons[0] as? UIButton)
+        return _tabButtonView
+    }
+    return tmp
+}
+set {
+    _tabButtonView = newValue;
+}
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4F2D2EC9-8ECC-42AD-BBEF-FE98EE73F8EA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>swift 快速生成PWTabButtonView的get set方法</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

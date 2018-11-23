@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>makeRightItem</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        let button : UIButton = UIButton()
+        button.addTarget(self, action: #selector(&lt;##selector#&gt;), for: .touchUpInside)
+//        button.setImage(&lt;#T##image: UIImage?##UIImage?#&gt;, for: &lt;#T##UIControlState#&gt;)
+        button.setTitle("&lt;#name#&gt;", for: .normal)
+button.titleLabel?.font = UIFont.systemFont(ofSize: &lt;#size#&gt;)
+        let rightItem : UIBarButtonItem = UIBarButtonItem(customView: button)
+        self.navigationItem.rightBarButtonItem = rightItem</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>02C078F9-996F-41CD-A56D-249226D33CB5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>swift 快速生成rightItem</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

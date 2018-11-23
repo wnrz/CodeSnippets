@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>makeSetGet</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>var &lt;#name1#&gt; : &lt;#class#&gt;!
+public var  &lt;#name2#&gt; : &lt;#class#&gt;?{
+        get {
+            guard let tmp = &lt;#name1#&gt; else {
+                &lt;#name1#&gt; = &lt;#class#&gt;()
+                return &lt;#name1#&gt;
+            }
+            return tmp
+        }
+        set {
+            &lt;#name1#&gt; = newValue
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6F38E2C1-DC37-4B7A-907C-6FBA172E4149</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>swift 快速生成set get</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

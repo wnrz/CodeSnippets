@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>makeServiceSetGet</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>var &lt;#_service#&gt;: &lt;#class#&gt;?
+var &lt;#service#&gt; : &lt;#class#&gt;! {
+get {
+    guard let tmp = &lt;#_service#&gt; else {
+    &lt;#_service#&gt; = &lt;#class#&gt;(wihtCellClass: &lt;#cellClass#&gt;.classForCoder(), bridge: &lt;#bridgeClass#&gt;())
+    &lt;#_service#&gt;?.setSectionViews([&lt;#sectionClass&gt;()])
+    &lt;#_service#&gt;?.bridge.loadData()
+    return &lt;#_service#&gt;
+}
+return tmp
+}
+set {
+    &lt;#_service#&gt; = newValue;
+}
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>27177DC9-A01C-43EC-8484-96B18BF230DC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>swift 快速生成Service对象</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
